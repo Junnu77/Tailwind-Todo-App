@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import TodoContext from "../providers/TodoContext";
+import TodoContext from "../context/TodoContext";
 
 const Navbar = ({ theme, changeTheme }) => {
   return (

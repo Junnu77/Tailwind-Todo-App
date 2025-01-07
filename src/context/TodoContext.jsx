@@ -4,11 +4,6 @@ const TodoContext = createContext();
 
 // provider
 export const TodoProvider = ({ children }) => {
-  const [theme, setTheme] = useState(false);
-  const changeTheme = () => {
-    theme ? setTheme(false) : setTheme(true);
-  };
-
   const [edit, setEdit] = useState({ todo: {}, isEdit: false });
 
   const [todos, setTodos] = useState([]);
@@ -44,8 +39,6 @@ export const TodoProvider = ({ children }) => {
         editTodo,
         edit,
         updateTodo,
-        theme,
-        changeTheme,
       }}
     >
       {children}

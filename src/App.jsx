@@ -3,8 +3,8 @@ import Navbar from "./Components/Navbar";
 import Form from "./Components/Form";
 import Footer from "./Components/Footer";
 import CardContainer from "./Components/CardContainer";
-import { TodoProvider } from "./providers/TodoContext";
-import ThemeContext from "./Providers/ThemeContext";
+import { TodoProvider } from "./context/TodoContext";
+import ThemeContext from "./context/ThemeContext";
 
 const App = () => {
   const { theme, changeTheme } = useContext(ThemeContext);

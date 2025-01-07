@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { FaTrashAlt, FaRegEdit } from "react-icons/fa";
-import TodoContext from "../providers/TodoContext";
+import TodoContext from "../context/TodoContext";
 const Card = ({ todo, theme }) => {
   const { deleteTodo, editTodo } = useContext(TodoContext);
   return (

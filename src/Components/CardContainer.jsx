@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import Card from "./Card";
-import TodoContext from "../providers/TodoContext";
+import TodoContext from "../context/TodoContext";
 
 const CardContainer = ({ theme }) => {
   const { todos } = useContext(TodoContext);
